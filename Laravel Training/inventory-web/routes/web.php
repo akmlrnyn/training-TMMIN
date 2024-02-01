@@ -21,5 +21,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::resource('/user', App\Http\Controllers\UserController::class);
+Route::resource('/kategori', App\Http\Controllers\KategoriController::class);
+Route::resource('/ruangan', App\Http\Controllers\RuanganController::class);
+
+
 
 
